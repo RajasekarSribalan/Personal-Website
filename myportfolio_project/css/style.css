@@ -69,7 +69,16 @@ p:last-of-type{
   border-style: solid;
   padding: .5em 1.75em;
 }
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5em;
+  }
+}
 
+.button-small{
+ font-size: 1.5rem;
+ font-weight: 700;
+}
 .button-accent {
   color: #00ff6c;
   border-color: #00ff6c;
@@ -80,11 +89,7 @@ p:last-of-type{
   color: #232323;
 }
 
-@media (min-width: 60rem) {
-  .button {
-    font-size: 1.5em;
-  }
-}
+
 
 /* header
 ================ */
@@ -213,4 +218,34 @@ home-about-textbox*
 	}
 
 
+}
+
+
+/** Portfolio **/
+
+.portfolio{
+  margin: 3em 0;
+}
+
+.port-item{
+  margin: 0;
+  position: relative;
+}
+
+.pory-item img{
+      display: block;
+}
+.port-desc{
+  position: absolute;
+  z-index: 100;
+  bottom: 2em;
+  left: 3em;
+  right: 3em;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  padding-bottom: 1em;
+}
+
+.port-desc p{
+   margin: 1em;
 }
